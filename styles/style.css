@@ -1,0 +1,99 @@
+/* Google Fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+/* Common Styles */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* Nav Styles */
+nav{
+    margin-left: 10%;
+}
+.brand-name{
+    font-size: 24px;
+    font-weight: 700;
+    color: #3A3A3A;
+}
+@media only screen and (max-width:992px) {
+    nav{
+        margin: 0 auto;
+    }
+    .brand-name{
+        text-align: center;
+    }
+}
+
+/* Header Styles */
+header .container{
+    margin: 3% 10%;
+    display: flex;
+}
+/* header .header-info{
+    margin-top: 50px;
+} */
+header .header-title{
+    font-size: 52px;
+    margin-bottom: 0px;
+}
+header .header-info p{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 27px;
+}
+header .header-button{
+    background-color: #E02C6D;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 130px;
+    border-radius: 41px;
+    padding: 10px 24px;
+    color: #FFFFFF;  
+}
+header .header-button a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+header .header-button .fa-arrow-right{
+    margin-left: 8px;
+}
+/* header .header-image{
+    margin-top: 30px;
+} */
+
+header .header-image img{
+    /* padding: 0px 100px; */
+    /* width: 100%; */
+    /* padding-left: 150px; */
+    /* margin-left: 30%; */
+}
+@media only screen and (max-width:688px) {
+    .container{
+        /* width: 100%; */
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    header .header-info{
+        margin-top: 20px;
+    }
+    header .header-button{
+        justify-content: center;
+    }
+    header .header-image{
+        margin-top: 30px;
+    }
+    header .header-image img{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+/* @media only screen and (min-width: 689px) and (max-width:992px) {
+    
+    .header .header-info{
+        margin-top: 20px;
+    }
+} */
