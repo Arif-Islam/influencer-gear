@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 /* Common Styles */
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
     margin: 0;
 }
 
@@ -57,7 +57,7 @@ header .header-button a{
     text-decoration: none;
     color: #FFFFFF;
 }
-header .header-button .fa-arrow-right{
+.fa-arrow-right{
     margin-left: 8px;
 }
 /* header .header-image{
@@ -138,14 +138,34 @@ header .header-image img{
     font-weight: 600;
 }
 
+/* See More Button */
+.see-more-div{
+    display: flex;
+    justify-content: end;
+    margin-right: 20%;
+    margin-bottom: 40px;
+}
+.see-more-button a{
+    text-decoration: none;
+    color: #E02C6D;
+}
+.see-more-button{
+    color: #E02C6D;
+    font-size: 20px;
+    font-weight: 700;
+}
+
 /* Mobile media query */
 
 @media only screen and (max-width:688px) {
-    .container{
+    header .container{
         width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        margin: 0;
     }
-    .header-info{
-        padding-left: 20px;
+    header .header-info{
+        padding-left: 0px;
+        text-align: center;
     }
     header .header-title{
         font-size: 25px;
@@ -166,14 +186,16 @@ header .header-image img{
         border-radius: 31px;
         padding: 10px 24px;
         justify-content: center;
+        /* align-items: center; */
     }
     header .header-image{
         margin-top: 30px;
     }
     header .header-image img{
-        width: 100%;
+        width: 70%;
         margin: 0;
         padding: 0;
+        /* text-align: center; */
     }
     .container-product{
         margin: 0;
@@ -190,7 +212,13 @@ header .header-image img{
     .product-heading{
         margin-bottom: 25px;
     }
+    .see-more-div{
+        margin-right: 10px;
+        margin-bottom: 50px;
+    }
 }
+
+
 /* Tablet Media Query */
 
 @media only screen and (min-width: 689px) and (max-width:992px) {
