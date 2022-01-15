@@ -33,7 +33,8 @@ header .container{
     width: 100%;
 }
 header .header-info{
-    padding-left: 100px;
+    padding-left: 200px;
+    
 }
 header .header-title{
     font-size: 52px;
@@ -70,8 +71,6 @@ header .header-image{
 header .header-image img{
     width: 60%;
 }
-
-
 
 /* Product Styles */
 .container-product{
@@ -210,7 +209,7 @@ header .header-image img{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-left: 0px;
+        padding: 0px 20px;
         text-align: center;
     }
     header .header-title{
@@ -262,8 +261,9 @@ header .header-image img{
         margin-bottom: 25px;
     }
     .see-more-div{
-        margin-right: 10px;
-        margin-bottom: 50px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        margin-top: 30px;
     }
     .container-bonus{
         grid-template-columns: repeat(1,1fr);
@@ -272,13 +272,10 @@ header .header-image img{
         width: 200px;
     }
     .bonus-info{
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center; */
         margin-right: 0px;
-        /* justify-content: center; */
         align-items: center;
         text-align: center;
+        padding: 0px 15px;
     }
 }
 
@@ -297,7 +294,7 @@ header .header-image img{
         font-size: 40px;
         margin-bottom: 0px;
     }
-    .header-info{
+    header .header-info{
         padding-left: 3rem;
     }
     .container-product{
@@ -315,6 +312,11 @@ header .header-image img{
     }
     .product-heading{
         margin-bottom: 25px;
+    }
+    .see-more-div{
+        margin-right: 40px;
+        margin-bottom: 10px;
+        margin-top: 30px;
     }
     .bonus-image img{
         width: 275px;
