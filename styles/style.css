@@ -26,6 +26,7 @@ nav div{
 
 /* Header Styles */
 header .container{
+    margin-top: 50px;
     /* margin: 3% 10%; */
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -60,9 +61,11 @@ header .header-button a{
 .fa-arrow-right{
     margin-left: 8px;
 }
-/* header .header-image{
-    width: 100%;
-} */
+header .header-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 header .header-image img{
     width: 60%;
@@ -143,7 +146,7 @@ header .header-image img{
     display: flex;
     justify-content: end;
     margin-right: 20%;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 .see-more-button a{
     text-decoration: none;
@@ -155,6 +158,46 @@ header .header-image img{
     font-weight: 700;
 }
 
+/* Bonus Section */
+/* .bonus-section{
+    padding: 100px;
+} */
+.container-bonus{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+}
+.bonus-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bonus-image img{
+    width: 300px;
+}
+.bonus-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 140px;
+}
+.bonus-info p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.bonus-button{
+    background-color: #E02C6D;
+    border: 1px solid #E02C6D;
+    width: 270px;
+    padding: 10px 10px;
+    color: white;
+}
+.bonus-button a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
 /* Mobile media query */
 
 @media only screen and (max-width:688px) {
@@ -164,6 +207,9 @@ header .header-image img{
         margin: 0;
     }
     header .header-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding-left: 0px;
         text-align: center;
     }
@@ -190,6 +236,9 @@ header .header-image img{
     }
     header .header-image{
         margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     header .header-image img{
         width: 70%;
@@ -216,6 +265,21 @@ header .header-image img{
         margin-right: 10px;
         margin-bottom: 50px;
     }
+    .container-bonus{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .bonus-image img{
+        width: 200px;
+    }
+    .bonus-info{
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+        margin-right: 0px;
+        /* justify-content: center; */
+        align-items: center;
+        text-align: center;
+    }
 }
 
 
@@ -239,6 +303,7 @@ header .header-image img{
     .container-product{
         margin: 0;
         margin-bottom: 20px;
+        margin-top: 30px;
     }
     .products{
         grid-template-columns: repeat(2,1fr);
@@ -251,4 +316,10 @@ header .header-image img{
     .product-heading{
         margin-bottom: 25px;
     }
+    .bonus-image img{
+        width: 275px;
+    }
+    .bonus-info{
+        margin-right: 15px;
+    } 
 }
