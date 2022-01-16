@@ -257,6 +257,7 @@ header .header-image img{
         align-items: center;
         padding: 0px 20px;
         text-align: center;
+        order: 2;
     }
     header .header-title{
         font-size: 25px;
